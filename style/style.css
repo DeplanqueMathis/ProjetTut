@@ -1,7 +1,44 @@
+@font-face {
+    font-family: 'koliko';
+    src: url('Webfont/koliko-regular.eot'); /* IE9 Compat Modes */
+    src: url('Webfont/koliko-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('Webfont/koliko-regular.woff2') format('woff2'), /* Modern Browsers */
+        url('Webfont/koliko-regular.woff') format('woff'), /* Modern Browsers */
+        url('Webfont/koliko-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('Webfont/koliko-regular.svg') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'koliko bold';
+    src: url('Webfont/koliko-Bold.eot'); /* IE9 Compat Modes */
+    src: url('Webfont/koliko-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('Webfont/koliko-Bold.woff2') format('woff2'), /* Modern Browsers */
+        url('Webfont/koliko-Bold.woff') format('woff'), /* Modern Browsers */
+        url('Webfont/koliko-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('Webfont/koliko-Bold.svg') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'koliko light';
+    src: url('Webfont/koliko-Light.eot'); /* IE9 Compat Modes */
+    src: url('Webfont/koliko-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('Webfont/koliko-Light.woff2') format('woff2'), /* Modern Browsers */
+        url('Webfont/koliko-Light.woff') format('woff'), /* Modern Browsers */
+        url('Webfont/koliko-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('Webfont/koliko-Light.svg') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+	font-family: 'koliko';
 }
 
 header{
@@ -67,4 +104,74 @@ header nav a:hover{
 
 #connection{
 	display: none;
+}
+
+#banner{
+	display: flex;
+	position: relative;
+}
+
+.slide{
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	height: 500px;
+	overflow: hidden;
+}
+
+#slideselect{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+}
+
+#slide2, #slide3{
+	display: none;
+}
+
+#slide1>img{
+	width: 100%;
+}
+
+#slide2>img{
+	margin-top: -7rem;
+	width: 100%;
+}
+
+#slide3>img{
+	margin-left: -7rem;
+	width: 120%;
+}
+
+.bouton-slide{
+	position: absolute;
+	top: 50%;
+	width: 1.5rem;
+	height: 2rem;
+	background-color: rgba(160,160,160,0.75);
+	border: none;
+}
+
+#slideprec{
+	left: 10%;
+}
+
+#slidesuiv{
+	right: 10%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
 }
