@@ -1,3 +1,70 @@
-@charset "utf-8";
-/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+header{
+	position: relative;
+}
+
+header img{
+	width: 20rem;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header nav{
+	margin: 1rem auto;
+	width: 45%;
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav a{
+	margin: 0.25rem 0.5rem;
+	text-decoration: none;
+	color: #6c6d6d;
+	transition-duration: 0.5s;
+}
+
+header nav a:hover{
+	margin: 0;
+	padding: 0.25rem 0.5rem;
+	background-color: #6c6d6d;
+	color: white;
+}
+
+.text-hide{
+	font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+#acces{
+	position: absolute;
+	top: 0;
+	right: 1rem;
+}
+
+#account{
+	display: inline-block;
+	width: 45px;
+	height: 47px;
+	background: url("../Images/person (1).png");
+	background-position: 0 0;
+	background-size: 3rem;
+}
+
+#account:hover{
+	background: url("../Images/person.png");
+	background-position: 0 0;
+	background-size: 3rem;
+}
+
+#connection{
+	display: none;
+}
