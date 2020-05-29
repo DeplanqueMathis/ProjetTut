@@ -21,7 +21,7 @@ function slideapparait(nb){
 	}
 	slides[slideactu-1].style.display = "block";
 	dots[slideactu-1].className += " active";
-	showSlides();
+	//showSlides();
 }
 function showSlides() {
 	var slides = document.getElementsByClassName("slide");
