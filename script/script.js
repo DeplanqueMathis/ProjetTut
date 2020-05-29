@@ -8,6 +8,7 @@ function Slide(nb){
 	slideapparait(slideactu = nb);
 }
 
+let timeout;
 function slideapparait(nb){
 	var slides = document.getElementsByClassName("slide");
 	var dots = document.getElementsByClassName("dot");
@@ -21,8 +22,10 @@ function slideapparait(nb){
 	}
 	slides[slideactu-1].style.display = "block";
 	dots[slideactu-1].className += " active";
-	//showSlides();
+	clearTimeout(timeout);
+	timeout = setTimeout("slideapparait(slideactu += 1)" , 10000);
 }
+/*
 function showSlides() {
 	var slides = document.getElementsByClassName("slide");
 	var dots = document.getElementsByClassName("dot");
@@ -36,5 +39,5 @@ function showSlides() {
 	}
 	slides[slideactu-1].style.display = "block";
 	dots[slideactu-1].className += " active";
-	setTimeout(showSlides, 10000); // Change image every 2 seconds
-}
+	setTimeout(showSlides, 10000); // Change image every 10 seconds
+}*/

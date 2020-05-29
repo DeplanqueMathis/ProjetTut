@@ -114,7 +114,7 @@ header nav a:hover{
 .slide{
 	margin-right: auto;
 	margin-left: auto;
-	width: 80%;
+	width: 100%;
 	height: 500px;
 	overflow: hidden;
 }
@@ -135,13 +135,14 @@ header nav a:hover{
 }
 
 #slide2>img{
-	margin-top: -7rem;
+	margin-top: -14rem;
 	width: 100%;
 }
 
 #slide3>img{
-	margin-left: -7rem;
-	width: 120%;
+	margin-top: -7rem;
+	/*margin-left: -7rem;*/
+	width: 100%;
 }
 
 .bouton-slide{
@@ -154,11 +155,11 @@ header nav a:hover{
 }
 
 #slideprec{
-	left: 10%;
+	left: 0;
 }
 
 #slidesuiv{
-	right: 10%;
+	right: 0;
 }
 
 .dot {
