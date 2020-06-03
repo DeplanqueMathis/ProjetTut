@@ -11,7 +11,7 @@
 }
 
 @font-face {
-    font-family: 'koliko bold';
+    font-family: 'koliko-bold';
     src: url('Webfont/koliko-Bold.eot'); /* IE9 Compat Modes */
     src: url('Webfont/koliko-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
         url('Webfont/koliko-Bold.woff2') format('woff2'), /* Modern Browsers */
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-    font-family: 'koliko light';
+    font-family: 'koliko-light';
     src: url('Webfont/koliko-Light.eot'); /* IE9 Compat Modes */
     src: url('Webfont/koliko-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
         url('Webfont/koliko-Light.woff2') format('woff2'), /* Modern Browsers */
@@ -38,11 +38,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-	font-family: 'koliko';
+}
+
+body{
+	font-family: 'koliko';	
 }
 
 header{
 	position: relative;
+}
+
+#slogan{
+	font-family: 'futura';
+	color: #6c6d6d;
+	position: absolute;
+	font-size: 0.75rem;
+	top: 5rem;
+	left: 50%;
 }
 
 header img{
@@ -68,6 +80,13 @@ header nav a{
 
 header nav a:hover{
 	margin: 0;
+	padding: 0.25rem 0.5rem;
+	background-color: #6c6d6d;
+	color: white;
+}
+
+.headeractive{
+	margin:0;
 	padding: 0.25rem 0.5rem;
 	background-color: #6c6d6d;
 	color: white;
@@ -106,6 +125,32 @@ header nav a:hover{
 	display: none;
 }
 
+#banner-salon{
+	overflow: hidden;
+	height: 500px;
+	position: relative;
+}
+
+#img-banner-salon{
+	margin-top: -13rem;
+	width: 100%;
+}
+
+#text-banner-salon{
+	position: absolute;
+	display: flex;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	justify-content: center;
+	align-items: center;
+	color: #6c6d6d;
+	font-size: 7rem;
+	-webkit-text-stroke: 2px;
+	-webkit-text-stroke-color: #e5cdce;
+}
+
 #banner{
 	display: flex;
 	position: relative;
@@ -126,22 +171,27 @@ header nav a:hover{
 	width: 100%;
 }
 
-#slide2, #slide3{
+#slide2, #slide3, #slide4{
 	display: none;
 }
 
 #slide1>img{
-	width: 100%;
-}
-
-#slide2>img{
 	margin-top: -14rem;
 	width: 100%;
 }
 
-#slide3>img{
+#slide2>img{
 	margin-top: -7rem;
-	/*margin-left: -7rem;*/
+	width: 100%;
+}
+
+#slide3>img{
+	margin-top: -55rem;
+	width: 100%;
+}
+
+#slide4>img{
+	margin-top: -20rem;
 	width: 100%;
 }
 
@@ -175,4 +225,128 @@ header nav a:hover{
 
 .active, .dot:hover {
   background-color: #717171;
+}
+
+.text{
+	padding: 2rem 0;
+	font-size: 1.5rem;
+	background-color: #6c6d6d;
+}
+
+.paragraph{
+	font-family: 'koliko-light';
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	text-align: center;
+	color: white;
+}
+
+.paragraph a{
+	color: #D7B3B5;
+	text-decoration: none;
+}
+
+.galerie-salon>.titre-infos{
+	padding-bottom: 0;
+}
+
+.titre-infos{
+	font-family: 'futura';
+	font-weight: lighter;
+	color: #E2CDC8;
+	text-shadow: -0.1rem 0 0.1rem black;
+	text-align: center;
+	font-size: 4rem;
+	padding: 8%;
+}
+
+.liste-salon{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.lien-influ{
+	margin: 2%;
+	width: 20%;
+	height: 14rem;
+	overflow: hidden;
+}
+
+.lien-influ:nth-child(2)>.img-influ>img{
+	width: 150%;
+	margin-left: -4rem;
+}
+
+.img-influ>img{
+	width: 100%;
+}
+
+.lien-part{
+	position: relative;
+	margin: 1%;
+	width: 30%;
+	height: 14rem;
+	overflow: hidden;
+}
+
+.img-part{
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+
+.img-part>img{
+	width: 100%;
+	margin: auto;
+}
+
+footer{
+	background-color: black;
+	padding: 2rem;
+	text-align: center;
+}
+
+footer a{
+	margin: 0.15rem;
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	background: url("../images/socials.png");
+	background-size: 20rem;
+}
+
+#fb{
+	background-position: -0.2rem -0.3rem;
+}
+
+#fb:hover{
+	background-position: -0.2rem -3.45rem;
+}
+
+#twitter{
+	background-position: -4.3rem -0.3rem;
+}
+
+#twitter:hover{
+	background-position: -4.3rem -3.45rem;
+}
+
+#yt{
+	background-position: -8.4rem -0.3rem;
+}
+
+#yt:hover{
+	background-position: -8.5rem -3.45rem;
+}
+
+#insta{
+	background-position: -12.6rem -0.3rem;
+}
+
+#insta:hover{
+	background-position: -12.6rem -3.45rem;
 }
