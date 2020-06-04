@@ -257,7 +257,7 @@ header nav a:hover{
 	text-shadow: -0.1rem 0 0.1rem black;
 	text-align: center;
 	font-size: 4rem;
-	padding: 8%;
+	padding: 5%;
 }
 
 .liste-salon{
@@ -315,7 +315,7 @@ footer a{
 	display: inline-block;
 	width: 45px;
 	height: 45px;
-	background: url("../images/socials.png");
+	background: url("../Images/socials.png");
 	background-size: 20rem;
 }
 
