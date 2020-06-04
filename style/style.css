@@ -304,6 +304,12 @@ header nav a:hover{
 	margin: auto;
 }
 
+.lien-part:nth-child(4)>div>img, .lien-part:nth-child(6)>div>img{
+	width: auto;
+	height: 100%;
+	margin: auto;
+}
+
 footer{
 	background-color: black;
 	padding: 2rem;
