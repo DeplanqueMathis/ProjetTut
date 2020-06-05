@@ -383,6 +383,7 @@ header nav a:hover{
 }
 
 #planacces{
+   margin-bottom: 20px;
 	display: flex;
 	width: 70%;
 	margin-left: auto;
@@ -398,7 +399,16 @@ header nav a:hover{
 }
 
 #planacces a>img{
+    position: relative;
 	width: 100%;
+    filter: blur(0px);
+-webkit-filter: blur(0px);
+}
+
+#planacces a>img:hover {
+    transition:filter .5s;
+filter: blur(4px);
+-webkit-filter: blur(4px);
 }
 
 footer{
