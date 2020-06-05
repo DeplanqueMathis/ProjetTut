@@ -227,10 +227,25 @@ header nav a:hover{
   background-color: #717171;
 }
 
+.text h1 {
+    background-color: #cda9a1;
+    color: #6c6d6d;
+    padding: 2rem 0;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+.text h2 {
+    background-color: #cda9a1;
+    color: #6c6d6d;
+    padding: 2rem 0;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
 .text{
 	padding: 2rem 0;
 	font-size: 1.5rem;
 	background-color: #6c6d6d;
+    
 }
 
 .paragraph{
