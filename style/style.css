@@ -227,10 +227,25 @@ header nav a:hover{
   background-color: #717171;
 }
 
+.text h1 {
+    background-color: #cda9a1;
+    color: #6c6d6d;
+    padding: 2rem 0;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+.text h2 {
+    background-color: #cda9a1;
+    color: #6c6d6d;
+    padding: 2rem 0;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
 .text{
 	padding: 2rem 0;
 	font-size: 1.5rem;
 	background-color: #6c6d6d;
+    
 }
 
 .paragraph{
@@ -258,6 +273,14 @@ header nav a:hover{
 	text-align: center;
 	font-size: 4rem;
 	padding: 5%;
+}
+.para-infos {
+    font-family: 'futura';
+     font-weight: lighter;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-left: 700px;
+    width: 500px;
 }
 
 .liste-salon{
@@ -350,7 +373,7 @@ header nav a:hover{
 #plan{
 	position: relative;
 	width: 100%;
-	height: 45rem;
+	height: 60rem;
 }
 
 #img-plan{
