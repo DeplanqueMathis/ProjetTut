@@ -274,6 +274,14 @@ header nav a:hover{
 	font-size: 4rem;
 	padding: 5%;
 }
+.para-infos {
+    font-family: 'futura';
+     font-weight: lighter;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-left: 700px;
+    width: 500px;
+}
 
 .liste-salon{
 	display: flex;
@@ -365,7 +373,7 @@ header nav a:hover{
 #plan{
 	position: relative;
 	width: 100%;
-	height: 45rem;
+	height: 60rem;
 }
 
 #img-plan{
