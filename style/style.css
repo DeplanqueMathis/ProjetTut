@@ -57,10 +57,7 @@ header{
 	left: 50%;
 }
 #logo {
-       width: 450px;
-       height: 538px;
-       margin-bottom: -211px;
-       margin-top: -170px;
+       width: 20rem;
 }
 header img{
 	width: 20rem;
@@ -118,7 +115,6 @@ header nav a:hover{
 	background: url("../Images/person (1).png");
 	background-position: 0 0;
 	background-size: 3rem;
-  margin-top: 192px;
 }
 
 #account:hover{
@@ -379,7 +375,7 @@ header nav a:hover{
 #plan{
 	position: relative;
 	width: 100%;
-	height: 60rem;
+	height: 50rem;
 }
 
 #img-plan{
@@ -415,6 +411,45 @@ header nav a:hover{
     transition:filter .5s;
 filter: blur(4px);
 -webkit-filter: blur(4px);
+}
+
+#hebergement{
+	font-family: 'koliko-light';
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	text-align: center;
+	font-size: 1.5rem;
+	margin: 2rem auto;
+}
+
+#hebergement>h1{
+	margin-bottom: 1rem;
+}
+
+#liste-heberge{
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.lien-heberge{
+	width: 50%;
+}
+
+.lien-heberge:first-child>div{
+	width: 30%;
+}
+
+.lien-heberge>div{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.lien-heberge>div>img{
+	width: 100%;
 }
 
 footer{
