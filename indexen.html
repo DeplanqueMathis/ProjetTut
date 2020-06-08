@@ -6,17 +6,18 @@
 <link href="style/style.css" rel="stylesheet" type="text/css"/>
 <link href="style/style.css" rel="stylesheet" type="text/normalize"/>
 <script src="script/slider.js" type="text/javascript"></script>
+<script src="script/changepage.js" type="text/javascript"></script>
 </head>
 
 <body onLoad="Slide(1)">
 	<header>
 		<img id="logo" src="Images/Logo.png">
-		<p id="slogan">Photography Fair</p>
+		<!--<p id="slogan">Photography Fair</p>-->
 		<nav>
 			<a href="#">Home</a>
-			<a href="lesalon.html">The exhibition</a>
-			<a href="#">Useful information</a>
-			<a href="#">Contact</a>
+			<a href="lesalonen.html">The exhibition</a>
+			<a href="infopraten.html">Useful information</a>
+			<a href="contacten.html">Contact</a>
 			<a href="#">Book your places</a>
 		</nav>
 		<div id="login">
@@ -27,6 +28,9 @@
 				<input placeholder="Login" type="text">
 				<input placeholder="Password" type="password">
 			</div>
+		</div>
+		<div id="langue">
+			<input type="image" id="flaglangue" onClick="change('fr')" src="Images/flagen.png">
 		</div>
 	</header>
 	<div id="banner">
@@ -72,6 +76,14 @@
 			<a id="insta"><span class="text-hide">Instagram</span></a>
 			<a id="yt"><span class="text-hide">Youtube</span></a>
 			<a id="twitter"><span class="text-hide">Twitter</span></a>
+		</div>
+		<div>
+			<a href="#" id="agence">
+				<span class="text-hide">Agence Pixel</span>
+			</a>
+		</div>
+		<div>
+			<a href="#" id="mentions">Mentions Légales</a>
 		</div>
 	</footer>
 </body>

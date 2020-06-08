@@ -127,6 +127,17 @@ header nav a:hover{
 	display: none;
 }
 
+#langue{
+	position: absolute;
+	width: 2rem;
+	top: 1.5rem;
+	right: 4rem;
+}
+
+#flaglangue{
+	width: 100%;
+}
+
 #banner-salon{
 	overflow: hidden;
 	height: 500px;
@@ -261,26 +272,6 @@ header nav a:hover{
 .paragraph a{
 	color: #D7B3B5;
 	text-decoration: none;
-}
-.hebergement {
-    text-align: center;
-    padding: 50px 40px;
-}
-.hebergement p{
-    font-size: 1.3rem;
-}
-.hebergement h1 {
-    font-family: 'koliko-light';
-	font-weight: bold;
-    color : #9a5d41;
-}
-.hebergement h2{
-    font-family: 'koliko-light';
-	font-weight: bold;
-    color : #9a5d41;
-}
-.hebergement a {
-    color : #6c6d6d;
 }
 
 .galerie-salon>.titre-infos{
@@ -442,8 +433,8 @@ filter: blur(4px);
 	margin: 2rem auto;
 }
 
-#hebergement>h1{
-	margin-bottom: 1rem;
+#hebergement>h1, #hebergement>h2{
+	color: #cda9a1;
 }
 
 #liste-heberge{
@@ -472,13 +463,64 @@ filter: blur(4px);
 	width: 100%;
 }
 
+.text-contact {
+	font-family: "koliko-light";
+	font-weight: bold;
+	text-align: center;
+	font-size: 2.5rem;
+    background-color: #cda9a1;
+    color: #6c6d6d;
+    padding: 2rem 0;
+}
+
+.form-contact{
+	font-family: "koliko-light";
+	font-weight: bold;	
+	margin: 1rem auto;
+	font-size: 1.25rem;
+	letter-spacing: 0.2rem;
+}
+
+.form-contact input[type="text"],.form-contact input[type="email"],.form-contact input[type="tel"]{
+	width: 15rem;
+}
+
+form>legend{
+	font-family: "koliko-light";
+	font-weight: bold;
+	color: #cda9a1;
+	margin: auto;
+	text-align: center;
+	border: solid 2px lightgray;
+	width : 15rem;
+	height: 2rem;
+	font-size: 1.25rem;
+	letter-spacing: 0.2rem;
+}
+
+.contact-button{
+	margin: 0.5rem auto;
+	width: 10%;
+}
+
+.contact-button>input{
+	width: 100%;
+	height: 2rem;
+	background-color: #E2CDC8;
+	border: solid 1.5px lightgray;
+}
+
+#contact-presse{
+	display: none;
+}
+
 footer{
 	background-color: black;
 	padding: 2rem;
 	text-align: center;
 }
 
-footer a{
+#footer-social > a{
 	margin: 0.15rem;
 	display: inline-block;
 	width: 45px;
@@ -487,34 +529,60 @@ footer a{
 	background-size: 20rem;
 }
 
-#fb{
+#footer-social > #fb{
 	background-position: -0.2rem -0.3rem;
 }
 
-#fb:hover{
+#footer-social > #fb:hover{
 	background-position: -0.2rem -3.45rem;
 }
 
-#twitter{
+#footer-social > #twitter{
 	background-position: -4.3rem -0.3rem;
 }
 
-#twitter:hover{
+#footer-social > #twitter:hover{
 	background-position: -4.3rem -3.45rem;
 }
 
-#yt{
+#footer-social > #yt{
 	background-position: -8.4rem -0.3rem;
 }
 
-#yt:hover{
+#footer-social > #yt:hover{
 	background-position: -8.5rem -3.45rem;
 }
 
-#insta{
+#footer-social > #insta{
 	background-position: -12.6rem -0.3rem;
 }
 
-#insta:hover{
+#footer-social > #insta:hover{
 	background-position: -12.6rem -3.45rem;
+}
+
+#agence{
+	margin: 0.15rem;
+	display: inline-block;
+	width: 180px;
+	height: 30px;
+	background: url("../Images/pixelb.png");
+	background-repeat: no-repeat;
+	background-position: 0.45rem 0;
+	background-size: 10rem;
+}
+
+#agence:hover{
+	background: url("../Images/pixeln.png");
+	background-repeat: no-repeat;
+	background-position: 0.45rem 0;
+	background-size: 10rem;
+	background-color: white;
+	border-radius: 10% / 50%;
+}
+
+#mentions{
+	font-family: "koliko-light";
+	font-weight: bold;
+	color: lightgray;
 }

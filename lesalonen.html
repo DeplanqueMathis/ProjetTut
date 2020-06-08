@@ -5,15 +5,16 @@
 <title>Portraits the photo exhibition | Exhibition</title>
 <link href="style/style.css" rel="stylesheet" type="text/css"/>
 <link href="style/style.css" rel="stylesheet" type="text/normalize"/>
+<script src="script/changepage.js" type="text/javascript"></script>
 </head>
 
 <body>
 	<header>
 		<img id="logo" src="Images/Logo.png">
 		<nav>
-			<a href="index.html">Home</a>
+			<a href="indexen.html">Home</a>
 			<a href="#">The exhibition</a>
-			<a href="infoprat.html">Useful information</a>
+			<a href="infopraten.html">Useful information</a>
 			<a href="#">Contact</a>
 			<a href="#">Book your places</a>
 		</nav>
@@ -25,6 +26,9 @@
 				<input placeholder="Login" type="text">
 				<input placeholder="Password" type="password">
 			</div>
+		</div>
+		<div id="langue">
+			<input type="image" id="flaglangue" onClick="change('fr')" src="Images/flagen.png">
 		</div>
 	</header>
 	<div id="banner-salon">
@@ -128,6 +132,14 @@
 			<a id="insta"><span class="text-hide">Instagram</span></a>
 			<a id="yt"><span class="text-hide">Youtube</span></a>
 			<a id="twitter"><span class="text-hide">Twitter</span></a>
+		</div>
+		<div>
+			<a href="#" id="agence">
+				<span class="text-hide">Agence Pixel</span>
+			</a>
+		</div>
+		<div>
+			<a href="#" id="mentions">Mentions Légales</a>
 		</div>
 	</footer>
 </body>
