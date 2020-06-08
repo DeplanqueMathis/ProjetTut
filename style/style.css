@@ -41,7 +41,7 @@
 }
 
 body{
-	font-family: 'koliko';	
+	font-family: 'koliko';
 }
 
 header{
@@ -56,7 +56,12 @@ header{
 	top: 5rem;
 	left: 50%;
 }
-
+#logo {
+       width: 450px;
+       height: 538px;
+       margin-bottom: -211px;
+       margin-top: -170px;
+}
 header img{
 	width: 20rem;
 	display: block;
@@ -113,6 +118,7 @@ header nav a:hover{
 	background: url("../Images/person (1).png");
 	background-position: 0 0;
 	background-size: 3rem;
+  margin-top: 192px;
 }
 
 #account:hover{
@@ -245,7 +251,7 @@ header nav a:hover{
 	padding: 2rem 0;
 	font-size: 1.5rem;
 	background-color: #6c6d6d;
-    
+
 }
 
 .paragraph{
