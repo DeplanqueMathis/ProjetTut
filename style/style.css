@@ -262,6 +262,26 @@ header nav a:hover{
 	color: #D7B3B5;
 	text-decoration: none;
 }
+.hebergement {
+    text-align: center;
+    padding: 50px 40px;
+}
+.hebergement p{
+    font-size: 1.3rem;
+}
+.hebergement h1 {
+    font-family: 'koliko-light';
+	font-weight: bold;
+    color : #9a5d41;
+}
+.hebergement h2{
+    font-family: 'koliko-light';
+	font-weight: bold;
+    color : #9a5d41;
+}
+.hebergement a {
+    color : #6c6d6d;
+}
 
 .galerie-salon>.titre-infos{
 	padding-bottom: 0;
