@@ -514,6 +514,115 @@ form>legend{
 	display: none;
 }
 
+.envoi-contact{
+	width: 100%;
+	height: 2rem;
+	background-color: #E2CDC8;
+	border: solid 1.5px lightgray;
+}
+
+#reservation{
+	display: none;
+	margin: 1rem auto;
+	width: 90%;
+}
+
+.moyen-paiement{
+	margin: 0.5rem auto;
+	padding: 1rem;
+	border: solid 1px black;
+}
+
+.infoacheteur{
+	display: flex;
+	flex-wrap: wrap;
+	/*width: 80%*/
+}
+
+.infoacheteur>span{
+	width: 50%;
+}
+
+.infoacheteur>span>input{
+	width: 90%;
+	height: 2rem;
+}
+
+.cartes{
+	display: flex;
+	width: 10%;
+}
+
+.cartes>img{
+	width: 60%;
+}
+
+#cartebancaire{
+	display: flex;
+	flex-wrap: wrap;
+	/*width: 80%;*/
+}
+
+#cartebancaire>span:first-child{
+	width: 60%;
+}
+
+#cartebancaire>span:first-child>input{
+	width: 75%;
+}
+
+#cartebancaire>span{
+	width: 50%;
+}
+
+#cartebancaire>span>input{
+	width: 90%;
+	height: 2rem;
+}
+
+#typecarte{
+	display: flex;
+}
+
+#infocart,#infopaypal,#infovir{
+	display: none;
+}
+
+#redirectpaypal{
+	display: inline-block;
+	width: 15rem;
+	height: 4rem;
+	background-image: url("../Images/paypal.png");
+	background-size: 15rem;
+}
+
+.payer{
+	width: 10%;
+	margin: 0.5rem auto;
+}
+
+.button-payer{
+	width: 100%;
+	height: 2rem;
+	background-color: #E2CDC8;
+	border: solid 1.5px lightgray;
+}
+
+.form-reserv{
+	font-family: "koliko-light";
+	font-weight: bold;
+	margin: 0.5rem auto;
+}
+
+.form-reserv input{
+	width: 3rem;
+	height: 2rem;
+}
+
+#table-reserv{
+	margin: 1rem auto;
+}
+
 footer{
 	background-color: black;
 	padding: 2rem;

@@ -1,4 +1,4 @@
-function change(langue){
+function changepage(langue){
 	if(langue == "en"){
 		var url = window.location.href;
 		document.location.href= url.replace(".html","en.html");
