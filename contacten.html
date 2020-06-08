@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portraits le salon photo | Contact </title>
+<link href="style/style.css" rel="stylesheet" type="text/css"/>
+<link href="style/style.css" rel="stylesheet" type="text/normalize"/>
+<script src="script/changepage.js" type="text/javascript"></script>
+<script src="script/contact.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<header>
+		<img id="logo" src="Images/Logo.png">
+		<nav>
+			<a href="accueilen">Home</a>
+			<a href="lesalonen.html">The exhibition</a>
+			<a href="infopraten.html">Useful information</a>
+			<a href="#">Contact</a>
+			<a href="#">Book your places</a>
+		</nav>
+		<div id="login">
+			<a href="#" id="account">
+				<p class="text-hide">Logo account</p>
+			</a>
+			<div id="connection">
+				<input placeholder="Login" type="text">
+				<input placeholder="Password" type="password">
+			</div>
+		</div>
+		<div id="langue">
+			<input type="image" id="flaglangue" onClick="change('fr')" src="Images/flagen.png">
+		</div>
+	</header>
+	<div id="banner-salon">
+		<img id="img-banner-salon" src="Images/Contact.png">
+		<p id="text-banner-salon">Contact</p>
+	</div>
+	<div id="contact-visiteur">
+			<div class="paragraph-contact">
+				<h2 class="text-contact">Contact for particular </h2>
+			</div>
+		<div class="contact-button">
+			<input type="button" onClick="contact('presse')" value="Contact Presse">
+		</div>
+		<form method="GET">
+        <legend>Your Coordinates</legend>
+        <table class="form-contact">
+            <tr>
+                <td><label for="nom">Last Name:</label></td>
+                <td><input id="nom" name="nom" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="prenom">First Name:</label></td>
+                <td><input id="prenom" name="prenom" type="text"></td>
+            </tr>
+            
+            <tr>
+                <td>Gender :</td>
+                <td>
+                    <input type="radio" name="genre" value="femme"> Woman<br/>
+					<input type="radio" name="genre" value="homme"> Man<br/>
+                    <input type="radio" name="genre" value="autres"> Other
+					
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="mail">Mail address :</label></td>
+                <td><input id="mail" name="mail" type="email"></td>
+            </tr>
+        
+            <tr>
+                <td><label for="message">Message :</label></td>
+                <td><textarea id="message" name="messages" placeholder="Your message" rows="5" cols="33"></textarea></td>
+            </tr>
+        </table>
+        </form>
+		<div class="text">
+			<div class="paragraph">
+				<p>
+					10 avenue de Viennes <br/>
+					59600 MAUBEUGE <br/>
+			TEL : +33 3-25-84-69-36 <br/>
+					Mail : Portraits_salonphoto@contact.fr <br/>
+				   </p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="contact-presse">
+		<div class="paragraph-contact">
+			<h2 class="text-contact">Press Contact</h2>
+		</div>
+		<div class="contact-button">
+			<input type="button" onClick="contact('visiteur')" value="Visitor Contact">
+		</div>
+		<form method="GET">
+        <legend>Your Coordinates</legend>
+        <table  class="form-contact">
+            <tr>
+                <td><label for="agence">Agency's Name:</label></td>
+                <td><input id="nomagence" name="agence" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="adresse">Agency's Address :</label></td>
+                <td><input id="adresse" name="adresse" type="text"></td>
+            </tr>
+            
+            <tr>
+                <td><label for="mail">Mail Address :</label></td>
+                <td><input id="mail" name="mail" type="email"></td>
+            </tr>
+			
+			<tr>
+                <td><label for="tel">Phone Number :</label></td>
+                <td><input id="tel" name="tel" type="tel"></td>
+            </tr>
+        
+            <tr>
+                <td><label for="message">Message :</label></td>
+                <td><textarea id="message" name="messages" placeholder="Your message" rows="5" cols="33"></textarea></td>
+            </tr>
+        </table>
+        </form>
+		<div class="text">
+			<div class="paragraph">
+				<p> Mme De-Vecchi Francesca <br/>
+				10 avenue de Viennes <br/>
+				59600 MAUBEUGE <br/>
+				TEL : +33 3-27-84-70-21 <br/>
+				FAX : +33 4-85-95-52-35<br/>
+				Mail : Portraits_salonphoto@contact.fr</p>
+			</div>
+		</div>
+	</div>
+    <footer>
+		<div id="footer-social">
+			<a id="fb"><span class="text-hide">Facebook</span></a>
+			<a id="insta"><span class="text-hide">Instagram</span></a>
+			<a id="yt"><span class="text-hide">Youtube</span></a>
+			<a id="twitter"><span class="text-hide">Twitter</span></a>
+		</div>
+		<div>
+			<a href="#" id="agence">
+				<span class="text-hide">Agence Pixel</span>
+			</a>
+		</div>
+		<div>
+			<a href="#" id="mentions">Mentions Légales</a>
+		</div>
+	</footer>
+</body>
+</html>
