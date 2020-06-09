@@ -6,6 +6,8 @@
 <link href="style/style.css" rel="stylesheet" type="text/css"/>
 <link href="style/style.css" rel="stylesheet" type="text/normalize"/>
 <script src="script/changepage.js" type="text/javascript"></script>
+<script src="script/presse.js" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -39,16 +41,13 @@
 		<p class="paragraph">Bienvenue aux débutants, amateurs et professionnels au salon Portraits qui se déroulera le Samedi 21 et le Dimanche 22 Novembre 2020,<br/> durant ces 2 dates vous retrouverez des expositions sur différents thèmes, des conférences animées par des professionnels,<br/> des expositions de nouveaux produits de nos <a href="#part">partenaires</a> ainsi que d'autres évènements autour du portrait photographique.</p>
 	</div>
 	<div id="infos-salon">
+		<input type="button" onClick="dossierpresse('fr')" class="button" value="Si vous êtes de la presse">
 		<p class="titre-infos">
 			300 exposants
-		</p><!--
-        <p class="para-infos"> EcolePHOTO, Canon, SigmaPRO, Photo. org, Black and White, Photo Ciné, La vie en couleurs, Arrêt sur Image, Atmosphère, La Chambre noire, Sony, Tamron, MyPhotoAgency, Studio Madones, Studio Blanc, MBP, Imprim Photo, Styl’Image, Déclic, Lowepro <br> et bien d’autres.
-        </p>-->
+		</p>
 		<p class="titre-infos">
 			Sur 3 pavillons
-		</p><!--
-        <p class="para-infos">Hall des expositions. <br> Le coin des rencontre. <br> Le pavillon central.
-        </p>-->
+		</p>
 		<div class="galerie-salon" id="influ">
 			<p class="titre-infos">
 				Des grands noms de la photo :
@@ -121,9 +120,26 @@
 			<p class="titre-infos">
 					Le salon :
 			</p>
+			<div id="communication">
+				<iframe width="1120" height="630" src="https://www.youtube.com/embed/62BMZpNNpaM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
 			<div id="plan">
 				<img id="img-plan" src="Images/planlegende.png" alt="plan">
 			</div>
+		</div>
+	</div>
+	<div id="infopresse">
+		<h1 class="titre-infos">Informations pour la presse</h1>
+		<div id="dossierpresse">
+			<a href="Images/dossier.pdf" target="_blank">
+				<img src="Images/dossier.png" alt="plan du site" title="Cliquez ici pour télécharger le dossier de presse.">
+				<span class="fichier-hover"><span class="nom-fichier">Dossier de presse</span></span>
+			</a>
+			<a href="Images/communique.pdf" target="_blank">
+				<img src="Images/communique.png" alt="plan d'accés" title="Cliquez ici pour télécharger le plan.">
+				<span class="fichier-hover"><span class="nom-fichier">Communiqué de presse</span></span>
+			</a>
 		</div>
 	</div>
 	<footer>

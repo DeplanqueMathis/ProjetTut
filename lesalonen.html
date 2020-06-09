@@ -6,6 +6,8 @@
 <link href="style/style.css" rel="stylesheet" type="text/css"/>
 <link href="style/style.css" rel="stylesheet" type="text/normalize"/>
 <script src="script/changepage.js" type="text/javascript"></script>
+<script src="script/presse.js" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -39,16 +41,13 @@
 		<p class="paragraph">Welcome to beginners, amateurs and professionals at the Portraits exhibition which will take place on Saturday 21st and Sunday 22nd November 2020,<br/> during these 2 dates you will find exhibitions on different themes, conferences animated by professionals,<br/>exhibitions of new products from our <a href="#part">partners</a> as well as other events around the photographic portrait.</p>
 	</div>
 	<div id="infos-salon">
+		<input type="button" onClick="dossierpresse('en')" class="button" value="If you are from the press">
 		<p class="titre-infos">
 			300 exhibitors
 		</p>
-        <p class="para-infos"> EcolePHOTO, Canon, SigmaPRO, Photo. org, Black and White, Photo Cinema, Life in Color, Freeze Frame, Atmosphere, The Darkroom, Sony, Tamron, MyPhotoAgency, Studio Madones, Studio White, MBP, Photo Print, Styl'Image, Click, Lowepro <br> and many others.
-        </p>
 		<p class="titre-infos">
 			On 3 pavilions
 		</p>
-        <p class="para-infos">Exhibition hall. <br> The meeting place. <br> The central pavilion.
-        </p>
 		<div class="galerie-salon" id="influ">
 			<p class="titre-infos">
 				Big names in photography:
@@ -118,12 +117,27 @@
 			</div>
 		</div>
 		<div id="info-emplacement">
-			<p class="titre-infos">
-					The exhibition :
-			</p>
-			<div id="plan">
-				<img id="img-plan" src="Images/planlegende.png" alt="plan">
+			<p class="titre-infos">The exhibition :</p>
+			<div id="communication">
+				<iframe width="1120" height="630" src="https://www.youtube.com/embed/62BMZpNNpaM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
+			
+			<div id="plan">
+				<img id="img-plan" src="Images/planlegendanglais.png" alt="plan">
+			</div>
+		</div>
+	</div>
+	<div id="infopresse">
+		<h1 class="titre-infos">Information for the press</h1>
+		<div id="dossierpresse">
+			<a href="Images/dossieranglais.pdf" target="_blank">
+				<img src="Images/dossieranglais.png" alt="plan du site" title="Cliquez ici pour télécharger le dossier de presse.">
+				<span class="fichier-hover"><span class="nom-fichier">Media Pack</span></span>
+			</a>
+			<a href="Images/communiqueanglais.pdf" target="_blank">
+				<img src="Images/communiqueanglais.png" alt="plan d'accés" title="Cliquez ici pour télécharger le plan.">
+				<span class="fichier-hover"><span class="nom-fichier">Press release</span></span>
+			</a>
 		</div>
 	</div>
 	<footer>

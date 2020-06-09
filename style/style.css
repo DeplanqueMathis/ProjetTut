@@ -244,15 +244,15 @@ header nav a:hover{
     background-color: #cda9a1;
     color: #6c6d6d;
     padding: 2rem 0;
-    margin-top: -40px;
-    margin-bottom: 20px;
+	margin-top: -2rem;
+	margin-bottom: 2rem;
 }
 .text h2 {
     background-color: #cda9a1;
     color: #6c6d6d;
     padding: 2rem 0;
-    margin-top: -40px;
-    margin-bottom: 20px;
+	margin-top: -2rem;
+	margin-bottom: 2rem;
 }
 .text{
 	padding: 2rem 0;
@@ -379,20 +379,93 @@ header nav a:hover{
 	margin: auto;
 }
 
-#info-emplacement{
-	/*height: 60rem;*/
+#communication{
+	text-align: center;
+	margin-bottom: 5rem;
+}
+
+.button{
+	text-align: center;
+	width: 15%;
+	display: block;
+	margin: 0.5rem auto;
+	height: 2rem;
+	background-color: #E2CDC8;
+	border: solid 1.5px lightgray;
+}
+
+#infopresse{
+	display: none;
+}
+
+#dossierpresse{
+	display: flex;
+	margin: 1rem auto;
+	width: 80%;
+}
+
+#dossierpresse>a:first-child{
+	width: 65%;
+}
+
+#dossierpresse>a:nth-child(2){
+	width: 35%;
+}
+
+#dossierpresse>a>img{
+	width: 100%;
+	display: block;
+	margin: 1rem auto;
+}
+
+#dossierpresse>a .nom-fichier{
+	position: absolute;
+	top: 100%;
+	color: white;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 2rem;
+	transition-duration: 0.5s;
+}
+
+#dossierpresse>a{
+	position: relative;
+	overflow: hidden;
+}
+
+#dossierpresse>a:hover .nom-fichier{
+	top: 45%;
+}
+
+.fichier-hover{
+	position: absolute;
+	background-color: rgba(140,104,105,0.50);
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	width: 0;
+	height: 0;
+	transition-duration: 0.4s;
+}
+
+#dossierpresse>a:hover>.fichier-hover{
+	top: 7.5%;
+	left: 7.5%;
+	width: 85%;
+	height: 85%;
 }
 
 #plan{
-	position: relative;
-	width: 100%;
-	height: 50rem;
+	display: block;
+	margin: 1rem auto;
+	text-align: center;
+	width: 90%;
 }
 
 #img-plan{
-	position: absolute;
 	width: 60%;
-	left: 20rem;
 }
 
 #planacces{
@@ -659,6 +732,7 @@ form>legend{
 }
 
 footer{
+	margin-bottom: 0;
 	background-color: black;
 	padding: 2rem;
 	text-align: center;
@@ -729,4 +803,216 @@ footer{
 	font-family: "koliko-light";
 	font-weight: bold;
 	color: lightgray;
+}
+
+ @media screen and (max-width:500px) {
+	 
+	 #logo{
+		 width: 40%;
+	 }
+	 
+	 header nav{
+		 width: 100%;
+	 }
+	 header nav a{
+		 font-size: 0.6rem;
+	 }
+	 #login{
+		 display: none;
+	 }
+	 #langue{
+		 display: none;
+	 }
+	 .slide{
+		 height: 10rem;
+	 }
+	 #slide1>img{
+		 margin-top: -1rem;
+		 width: 100%;
+	 }
+
+	 #slide2>img{
+		 margin-top: -1rem;
+		 width: 100%;
+	 }
+
+	 #slide3>img{
+		 margin-top: -11rem;
+		 width: 100%;
+	 }
+
+	 #slide4>img{
+		 margin-top: -4rem;
+		 width: 100%;
+	 }
+	 .bouton-slide{
+		 height: 1.5rem;
+		 width: 1rem;
+		 top: 45%;
+	 }
+	 .dot{
+		 height: 0.5rem;
+		 width: 0.5rem;
+	 }
+	 
+	 .text{
+		 font-size: 0.8rem;
+	 }
+	 #banner-salon{
+		 overflow: hidden;
+		 height: 10rem;
+		 position: relative;
+	 }
+	 #img-banner-salon{
+		 margin-top: -2rem;
+		 width: 100%;
+	 }
+	 #text-banner-salon{
+		 font-size: 2rem;
+		 -webkit-text-stroke: 0.5px;
+		 -webkit-text-stroke-color: #e5cdce;
+	 }
+	 .titre-infos{
+		 font-size: 1.4rem;
+		 font-family: "futura";
+		 font-weight: bold;
+		 text-shadow: 0.5px 0.5px 0 black;
+		 width: 100%;
+	 }
+	 .liste-salon{
+		 width: 100%;
+	 }
+	 .lien-influ{
+		 margin: 1%;
+		 width: 21%;
+		 height: 4.5rem;
+	 }
+	 .influ-hover>span{
+		 font-size: 0.5rem;
+	 }
+	 .lien-influ:nth-child(2)>.img-influ>img{
+		 width: 150%;
+		 margin-left: -1.5rem;
+	 }
+	 .lien-part{
+		 position: relative;
+		 width: 25%;
+		 height: 5rem;
+	 }
+	 #communication>iframe{
+		 width: 80%;
+		 height: 10rem;
+	 }
+	 #communication{
+		 margin: 0.1rem auto;
+	 }
+	 #plan{
+		 margin: 0.2rem auto;
+	 }
+	 #dossierpresse>a .nom-fichier{
+		 font-size: 1.5rem;
+	 }
+	 .button{
+		 width: 9.5rem;
+		 height: 1.5rem;
+	 }
+	 #planacces{
+		 width: 100%;
+	 }
+	 .text{
+		 padding-top: 1rem;
+		 padding-bottom: 1rem;
+	 }
+	 .text h1{
+		 padding-top: 1rem;
+		 padding-bottom: 1rem;
+	 }
+	 .text h2{
+		 padding-top: 1rem;
+		 padding-bottom: 1rem;
+	 }
+	 #paraindex>h2{
+		 padding-top: 2rem;
+		 margin-bottom: 1rem;
+	 }
+	 #hebergement{
+		 font-size: 0.8rem;
+	 }
+	 .contact-button{
+		 width: 30%;
+	 }
+	 .form-contact{
+		 font-size: 0.8rem;
+	 }
+	 .infoacheteur{
+		 display: block;
+	 }
+	 #cartebancaire{
+		 display: block;
+	 }
+	 .cartes img{
+		 width: 100%;
+	 }
+	 .cartes{
+		 margin: 0.6rem;
+	 }
+	 .payer{
+		 width: 20%;
+	 }
+	 footer{
+		 margin-bottom: 0;
+		 background-color: black;
+		 padding: 1rem;
+		 text-align: center;
+	 }
+	 #footer-social > a{
+		 width: 2rem;
+		 height: 2rem;
+		 background-size: 15rem;
+	 }
+	 #footer-social > #fb{
+		 background-position: -0.2rem -0.3rem;
+	 }
+	 #footer-social > #fb:hover{
+		 background-position: -0.2rem -2.65rem;
+	 }
+	 #footer-social > #twitter{
+		 background-position: -3.3rem -0.3rem;
+	 }
+	 #footer-social > #twitter:hover{
+		 background-position: -3.3rem -2.65rem;
+	 }
+	 #footer-social > #yt{
+		 background-position: -6.4rem -0.3rem;
+	 }
+	 #footer-social > #yt:hover{
+		 background-position: -6.4rem -2.65rem;
+	 }
+	 #footer-social > #insta{
+		 background-position: -9.5rem -0.3rem;
+	 }
+	 #footer-social > #insta:hover{
+		 background-position: -9.5rem -2.65rem;
+	 }
+	 #agence{
+		 margin: 0.15rem;
+		 display: inline-block;
+		 width: 6rem;
+		 height: 1rem;
+		 background: url("../Images/pixelb.png");
+		 background-repeat: no-repeat;
+		 background-position: 0.45rem 0;
+		 background-size: 5rem;
+	 }
+	 #agence:hover{
+		 background: url("../Images/pixeln.png");
+		 background-repeat: no-repeat;
+		 background-position: 0.45rem 0;
+		 background-size: 5rem;
+		 background-color: white;
+		 border-radius: 10% / 50%;
+	 }
+	 #mentions{
+		 font-size: 0.5rem;
+	 }
 }
