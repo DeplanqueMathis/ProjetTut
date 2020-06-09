@@ -619,8 +619,43 @@ form>legend{
 	height: 2rem;
 }
 
+#info-paiement{
+	display: none;
+	font-family: "koliko-light";
+	font-weight: bold;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.caracterespeciaux{
+	font-family: "futura";
+}
+
+#conditions{
+	font-family: "koliko-light";
+	font-weight: bold;
+	text-align: right;
+	margin-right: 1rem;
+	font-size: 0.7rem;
+}
+
 #table-reserv{
 	margin: 1rem auto;
+}
+
+#table-reserv th{
+	font-family: "koliko";
+	letter-spacing: 0.1rem;
+}
+
+#apres-paiement{
+	display: none;
+	font-family: "koliko-light";
+	font-weight: bold;
+	color: #6c6d6d;
+	letter-spacing: 0.1rem;
+	margin: 5rem auto;
+	text-align: center;
 }
 
 footer{

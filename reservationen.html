@@ -12,13 +12,14 @@
 
 <body>
 	<header>
-		<img id="logo" src="Images/Logo.png">
+		<img id="logo" src="Images/Logoen.png">
+		<!--<p id="slogan">Photography Fair</p>-->
 		<nav>
-			<a href="index.html">Accueil</a>
-			<a href="lesalon.html">Le salon</a>
-			<a href="infoprat.html">Informations pratiques</a>
-			<a href="contact.html">Contact</a>
-			<a href="#">Réservez vos places</a>
+			<a href="indexen.html">Home</a>
+			<a href="lesalonen.html">The exhibition</a>
+			<a href="infopraten.html">Useful information</a>
+			<a href="contacten.html">Contact</a>
+			<a href="#">Book your places</a>
 		</nav>
 		<div id="login">
 			<a href="#" id="account">
@@ -30,80 +31,80 @@
 			</div>
 		</div>
 		<div id="langue">
-			<input type="image" id="flaglangue" onClick="changepage('en')" src="Images/flagen.png">
+			<input type="image" id="flaglangue" onClick="changepage('fr')" src="Images/flagfr.png">
 		</div>
 	</header>
 	<div id="banner-salon">
 		<img id="img-banner-salon" src="Images/image01.jpg">
-		<p id="text-banner-salon">Réservation de tickets</p>
+		<p id="text-banner-salon">Ticket booking</p>
 	</div>
 	<div id="table-reserv">
 		<form method="GET">
-        <legend>Votre réservation</legend>
+        <legend>Your booking</legend>
         <table class="form-reserv">
 			<tr>
-				<th colspan="2">Places</th>
+				<th colspan="2">Tickets</th>
 			</tr>
             <tr>
-                <td><label for="normal">Nombre de plein tarif(11 ,5€):</label></td>
+                <td><label for="normal">Number of full price(11 ,5€):</label></td>
                 <td><input id="normal" name="normal" type="number" value="0"></td>
             </tr>
             <tr>
-				<td><label for="special">Nombre de tarif réduit(5€)<span class="caracterespeciaux">* **</span>:</label></td>
+				<td><label for="special">Number of reduct price(5€)<span class="caracterespeciaux">* **</span>:</label></td>
                 <td><input id="special" name="special" type="number" value="0"></td>
             </tr>
             <tr>
-                <td><label for="douzeans">Moins de 12 ans(Gratuit)<span class="caracterespeciaux">**</span>:</label></td>
+                <td><label for="douzeans">Under 12 years(Free)<span class="caracterespeciaux">**</span>:</label></td>
                 <td><input id="douzeans" name="douzeans" type="number" value="0"></td>
             </tr>
 			
 			<tr>
-				<th colspan="2">Vestiaire</th>
+				<th colspan="2">Cloakroom</th>
 			</tr>
         
             <tr>
-                <td><label for="vetements">Vêtements(1€):</label></td>
+                <td><label for="vetements">Clothes(1€):</label></td>
                 <td><input id="vetements" name="vetements" type="number" value="0"></td>
             </tr>
 			<tr>
-                <td><label for="ptbagage">Petit bagage(2€):</label></td>
+                <td><label for="ptbagage">Small bags(2€):</label></td>
                 <td><input id="ptbagage" name="ptbagage" type="number" value="0"></td>
             </tr>
 			<tr>
-                <td><label for="grbagage">Gros bagage +2kg (3€):</label></td>
+                <td><label for="grbagage">Big bags +2kg (3€):</label></td>
                 <td><input id="grbagage" name="grbagage" type="number" value="0"></td>
             </tr>
 			<tr style="text-align: center;">
-				<td colspan="2"><input type="button" value="Valider" onClick="achat()" class="button-payer"></td>
+				<td colspan="2"><input type="button" value="Confirm" onClick="achat()" class="button-payer"></td>
 			</tr>
         </table>
         </form>
 		<div id="info-paiement">
-			<p>Votre nombre de places :<span id="places"></span></p>
+			<p>Your number of places :<span id="places"></span></p>
 			<p>Total :<span id="total"></span></p>
 		</div>
 		<div id="conditions">
-			<p><span class="caracterespeciaux">*</span>Tarif valable pour les -18, les étudiants, les groupes de plus de 10 personnes,<br/> les comités d'entreprises et les personnes à mobilités réduites ou présentant un handicap</p>
-			<p><span class="caracterespeciaux">**</span>Un justificatif sera demandé par mail</p>
+			<p><span class="caracterespeciaux">*</span>Price available for under 18, student, group of 10 or more people,<br/> work concils and people with reduced mobility or disabilities</p>
+			<p><span class="caracterespeciaux">**</span>Proof will be requested by email</p>
 		</div>
 	</div>
 	<div id="reservation">
 		<div id="carte" class="moyen-paiement">
-			<input type="radio" name="moyen" value="infocart" onClick="disp('infocart')">Carte
+			<input type="radio" name="moyen" value="infocart" onClick="disp('infocart')">Card
 			<div id="infocart">
-				<h3>Information titulaire</h3>
+				<h3>Holder information</h3>
 				<div class="infoacheteur">
-					<span>Nom (titulaire de la carte):<br/>
+					<span>Last Name (Holder of the card):<br/>
 					<input type="text" class="nom"></span>
-					<span>Prénom (titulaire de la carte):<br/>
+					<span>First name (Holder of the card):<br/>
 					<input type="text" class="prenom"></span>
-					<span>N° de téléphone :<br/>
+					<span>Phone number :<br/>
 					<input type="tel" class="tel"></span>
-					<span>Adresse mail :<br/>
+					<span>Mail address :<br/>
 					<input type="email" class="mail"></span>
 				</div>
 				<div>
-					<h3>Informations carte bancaire</h3>
+					<h3>Card information</h3>
 					<div id="typecarte">
 						<div class="cartes">
 							<input type="radio" id="visa" name="visa"><img src="Images/visa.png" alt="Visa">
@@ -119,35 +120,35 @@
 						</div>
 					</div>
 					<div id="cartebancaire">
-						<span>N° de carte :<br/>
+						<span>Card number :<br/>
 						<input type="number" class="numcarte"></span><br/>
-						<span>Code de sécurité :<br/>
+						<span>Security code :<br/>
 						<input type="number" class="codecache"></span>
-						<span>Date d'expiration(mm/aa) :<br/>
+						<span>Expiration date(mm/aa) :<br/>
 						<input type="month" class="date"></span>
 					</div>
 				</div>
 				<div class="payer">
-					<input type="button" value="Payer" class="button-payer" onClick="payer()">
+					<input type="button" value="Pay" class="button-payer" onClick="payer()">
 				</div>
 			</div>
 		</div>
 		<div id="virement" class="moyen-paiement">
-			<input type="radio" name="moyen" value="infovir" onClick="disp('infovir')">Virement
+			<input type="radio" name="moyen" value="infovir" onClick="disp('infovir')">Transfer
 			<div id="infovir">
 				<div class="infoacheteur">
-					<span>Nom :<br/>
+					<span>Last name :<br/>
 					<input type="text" class="nom"></span>
-					<span>Prénom :<br/>
+					<span>First name :<br/>
 					<input type="text" class="prenom"></span>
-					<span>N° de téléphone :<br/>
+					<span>Phone number :<br/>
 					<input type="tel" class="tel"></span>
-					<span>Adresse mail :<br/>
+					<span>Mail address :<br/>
 					<input type="email" class="mail"></span>
 				</div>
-				<p>Vous recevrez un RIB et un ID par mail, veuillez effectuer un virement avec l'id comme référence du paiement, vous récupèrerais vos places par mail une fois le virement reçu</p>
+				<p>You will receive bank details and an ID in your mail box, please make a transfer with the id as payment reference, you will get your places by mail once the transfer is received</p>
 				<div class="payer">
-					<input type="button" value="Payer" class="button-payer" onClick="payer()">
+					<input type="button" value="Pay" class="button-payer" onClick="payer()">
 				</div>
 			</div>
 		</div>
@@ -155,23 +156,23 @@
 			<input type="radio" name="moyen" value="infopaypal" onClick="disp('infopaypal')">Paypal
 			<div id="infopaypal">
 				<div class="infoacheteur">
-					<span>Nom :<br/>
+					<span>Last Name :<br/>
 					<input type="text" class="nom"></span>
-					<span>Prénom :<br/>
+					<span>First Name :<br/>
 					<input type="text" class="prenom"></span>
-					<span>N° de téléphone :<br/>
+					<span>Phone number :<br/>
 					<input type="tel" class="tel"></span>
-					<span>Adresse mail :<br/>
+					<span>Mail address :<br/>
 					<input type="email" class="mail"></span>
 				</div>
 				<div>
-					<span>Redirection vers paypal :<br/></span><a id="redirectpaypal" href="#"><span class="text-hide">Paypal</span></a>
+					<span>Redirect to paypal :<br/></span><a id="redirectpaypal" href="#"><span class="text-hide">Paypal</span></a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div id="apres-paiement">
-		<h1>Merci de votre réservations, les informations concernant votre commande vous seront bientôt envoyé par mail !</h1>
+		<h1>Thanks for your reservation, the informations about your order will be sent shortly by mail !</h1>
 	</div>
     <footer>
 		<div id="footer-social">
